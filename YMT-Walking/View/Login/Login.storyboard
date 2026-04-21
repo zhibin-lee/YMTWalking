@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qa0-E6-nKQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PrivacyViewController-->
+        <scene sceneID="NQz-jg-fbc">
+            <objects>
+                <viewController storyboardIdentifier="Privacy" id="fQG-CL-xbF" userLabel="PrivacyViewController" customClass="PrivacyViewController" customModule="YMTWalking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZcJ-Ge-kPM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNe-c9-WJm">
+                                <rect key="frame" x="57" y="758" width="300" height="45"/>
+                                <color key="backgroundColor" name="color_yamaha_racing_blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="EDF-s5-Ogo"/>
+                                    <constraint firstAttribute="height" constant="45" id="uW8-0q-3aa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="接受">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAgreeOnClick:" destination="fQG-CL-xbF" eventType="touchUpInside" id="gkf-dh-cis"/>
+                                    <segue destination="jhj-6y-7YY" kind="presentation" modalPresentationStyle="fullScreen" id="SEv-8Q-wvT"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bT-zS-Ryq">
+                                <rect key="frame" x="5" y="5" width="404" height="748"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hhm-IA-DkC"/>
+                        <color key="backgroundColor" name="color_yamaha_grey"/>
+                        <constraints>
+                            <constraint firstItem="6bT-zS-Ryq" firstAttribute="leading" secondItem="Hhm-IA-DkC" secondAttribute="leading" constant="5" id="3aB-dP-9SH"/>
+                            <constraint firstItem="6bT-zS-Ryq" firstAttribute="top" secondItem="Hhm-IA-DkC" secondAttribute="top" constant="5" id="HLv-h8-c4Y"/>
+                            <constraint firstItem="JNe-c9-WJm" firstAttribute="top" secondItem="6bT-zS-Ryq" secondAttribute="bottom" constant="5" id="LZi-Dh-1xl"/>
+                            <constraint firstItem="JNe-c9-WJm" firstAttribute="centerX" secondItem="ZcJ-Ge-kPM" secondAttribute="centerX" id="XS0-3C-CF9"/>
+                            <constraint firstItem="Hhm-IA-DkC" firstAttribute="trailing" secondItem="6bT-zS-Ryq" secondAttribute="trailing" constant="5" id="ZJj-vR-qYu"/>
+                            <constraint firstAttribute="bottom" secondItem="JNe-c9-WJm" secondAttribute="bottom" constant="5" id="yge-PA-QA6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="隱私權宣告" id="FAG-9o-8tt"/>
+                    <connections>
+                        <outlet property="btnAgree" destination="JNe-c9-WJm" id="TSx-EV-uxH"/>
+                        <outlet property="webPrivacy" destination="6bT-zS-Ryq" id="xM7-eU-m04"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yTj-hv-qMr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855.07246376811599" y="-1110.2678571428571"/>
+        </scene>
+        <!--LoginViewController-->
+        <scene sceneID="0oL-f3-xfn">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jhj-6y-7YY" userLabel="LoginViewController" customClass="LoginViewController" customModule="YMTWalking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RDX-XD-O51">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_YMT-Walking" translatesAutoresizingMaskIntoConstraints="NO" id="Ldr-vt-ntM">
+                                <rect key="frame" x="10" y="114" width="394" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="zFQ-1a-qN8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="識別代碼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHH-Of-fL6">
+                                <rect key="frame" x="20" y="419" width="109" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="4kd-Ng-72b"/>
+                                    <constraint firstAttribute="height" constant="40" id="mtx-I9-uyJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M7a-xZ-Gai">
+                                <rect key="frame" x="149" y="419" width="245" height="40"/>
+                                <color key="backgroundColor" name="color_yamaha_dark_grey"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kUa-EP-2X5"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLg-bF-xnt">
+                                <rect key="frame" x="57" y="524" width="300" height="45"/>
+                                <color key="backgroundColor" name="color_yamaha_racing_blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="G5J-pV-oEZ"/>
+                                    <constraint firstAttribute="width" constant="300" id="dRq-vG-U7Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="登入">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLoginOnClick:" destination="kjs-L6-04B" eventType="touchUpInside" id="seJ-E3-Z8b"/>
+                                    <action selector="pressLogin:" destination="jhj-6y-7YY" eventType="touchUpInside" id="xNB-MP-P84"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_powerby_topmost" translatesAutoresizingMaskIntoConstraints="NO" id="JlR-cF-pDB">
+                                <rect key="frame" x="87" y="734" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="6GQ-If-yGc"/>
+                                    <constraint firstAttribute="height" constant="128" id="TIg-jJ-DkZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="poE-7c-RFV"/>
+                        <color key="backgroundColor" name="color_yamaha_grey"/>
+                        <constraints>
+                            <constraint firstItem="poE-7c-RFV" firstAttribute="trailing" secondItem="M7a-xZ-Gai" secondAttribute="trailing" constant="20" id="O8b-jp-tQv"/>
+                            <constraint firstItem="Ldr-vt-ntM" firstAttribute="centerX" secondItem="RDX-XD-O51" secondAttribute="centerX" id="OCl-5N-4Ko"/>
+                            <constraint firstItem="M7a-xZ-Gai" firstAttribute="leading" secondItem="SHH-Of-fL6" secondAttribute="trailing" constant="20" id="Prk-mw-xju"/>
+                            <constraint firstItem="M7a-xZ-Gai" firstAttribute="top" secondItem="Ldr-vt-ntM" secondAttribute="bottom" constant="65" id="QmN-le-Obb"/>
+                            <constraint firstItem="Ldr-vt-ntM" firstAttribute="leading" secondItem="poE-7c-RFV" secondAttribute="leading" constant="10" id="U9h-LO-YG2"/>
+                            <constraint firstItem="dLg-bF-xnt" firstAttribute="top" secondItem="SHH-Of-fL6" secondAttribute="bottom" constant="65" id="bYb-Ya-7Nc"/>
+                            <constraint firstItem="SHH-Of-fL6" firstAttribute="leading" secondItem="poE-7c-RFV" secondAttribute="leading" constant="20" id="bkP-tZ-CQF"/>
+                            <constraint firstItem="JlR-cF-pDB" firstAttribute="bottom" secondItem="poE-7c-RFV" secondAttribute="bottom" id="cC3-Ih-1ts"/>
+                            <constraint firstItem="JlR-cF-pDB" firstAttribute="centerX" secondItem="RDX-XD-O51" secondAttribute="centerX" id="eLs-h5-Ea8"/>
+                            <constraint firstItem="SHH-Of-fL6" firstAttribute="top" secondItem="Ldr-vt-ntM" secondAttribute="bottom" constant="65" id="l4C-vO-Lsr"/>
+                            <constraint firstItem="poE-7c-RFV" firstAttribute="trailing" secondItem="Ldr-vt-ntM" secondAttribute="trailing" constant="10" id="luH-KD-N1L"/>
+                            <constraint firstItem="dLg-bF-xnt" firstAttribute="centerX" secondItem="RDX-XD-O51" secondAttribute="centerX" id="sr4-TW-TuK"/>
+                            <constraint firstItem="Ldr-vt-ntM" firstAttribute="top" secondItem="poE-7c-RFV" secondAttribute="top" constant="70" id="xNk-Sw-PJi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dpf-C1-xzh"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="dLg-bF-xnt" id="hdN-wJ-qqy"/>
+                        <outlet property="lblID" destination="SHH-Of-fL6" id="DB4-Od-1cR"/>
+                        <outlet property="txtUserID" destination="M7a-xZ-Gai" id="iif-OU-HdP"/>
+                        <segue destination="2mI-MD-DPj" kind="presentation" identifier="goToWalk" modalPresentationStyle="fullScreen" id="ZZ5-Xg-wOt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mce-1f-eYQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="kjs-L6-04B" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="-1110"/>
+        </scene>
+        <!--Walk-->
+        <scene sceneID="SQu-TY-jow">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Walk" storyboardName="Walk" id="2mI-MD-DPj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7MW-0Y-q9C"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i2p-He-Akk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2274" y="-1110"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L0I-X1-kIE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qa0-E6-nKQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="9i3-UA-yvd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="color_yamaha_racing_blue"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fQG-CL-xbF" kind="relationship" relationship="rootViewController" id="QNq-Q7-swh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HcU-kZ-QYV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55.072463768115945" y="-1110.2678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_YMT-Walking" width="1280" height="239.5"/>
+        <image name="logo_powerby_topmost" width="244" height="75"/>
+        <namedColor name="color_yamaha_dark_grey">
+            <color red="0.090000003576278687" green="0.093999996781349182" blue="0.10999999940395355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="color_yamaha_grey">
+            <color red="0.23100000619888306" green="0.23100000619888306" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="color_yamaha_racing_blue">
+            <color red="0.059000000357627869" green="0.18799999356269836" blue="0.50199997425079346" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

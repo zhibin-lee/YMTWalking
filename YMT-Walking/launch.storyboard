@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RPd-om-dj9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cG3-Wl-hJD">
+            <objects>
+                <viewController id="RPd-om-dj9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TRa-Ju-mhk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_yamaha" translatesAutoresizingMaskIntoConstraints="NO" id="zwq-ga-jBh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="color_yamaha_dark_grey"/>
+                        <constraints>
+                            <constraint firstItem="zwq-ga-jBh" firstAttribute="top" secondItem="TRa-Ju-mhk" secondAttribute="top" id="CeA-bD-XTk"/>
+                            <constraint firstItem="zwq-ga-jBh" firstAttribute="leading" secondItem="odB-s0-8se" secondAttribute="leading" id="UVu-5b-fLK"/>
+                            <constraint firstItem="zwq-ga-jBh" firstAttribute="trailing" secondItem="odB-s0-8se" secondAttribute="trailing" id="k64-Va-zru"/>
+                            <constraint firstAttribute="bottom" secondItem="zwq-ga-jBh" secondAttribute="bottom" id="wAz-Mg-Rlx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="odB-s0-8se"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBP-ab-e3N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="-611.38392857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash_yamaha" width="375" height="812"/>
+        <namedColor name="color_yamaha_dark_grey">
+            <color red="0.090000003576278687" green="0.093999996781349182" blue="0.10999999940395355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

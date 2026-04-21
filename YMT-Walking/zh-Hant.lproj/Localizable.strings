@@ -1,0 +1,49 @@
+/*
+  Localizable.strings
+  YMT-Walking
+
+  Created by animal-g on 2020/5/18.
+  Copyright © 2020 animal-g. All rights reserved.
+*/
+
+"login_privacy_title" = "隱私權宣告";
+"login_privacy_btnAccept" = "接受";
+
+"login_login_title" = "YMT健走";
+"login_login_id" = "員工識代";
+"login_login_btnLogin" = "登入";
+
+"walk_team_title" = "小組步數";
+"walk_team_lblTotalSteps" = "小組總步數";
+"walk_team_lblAvgSteps" = "小組平均步數";
+"walk_team_lblTodaySteps" = "今日步數";
+"walk_team_unitStep" = "步";
+"walk_team_unitWeek" = "週";
+"walk_team_unitMonth" = "月";
+"walk_team_lblName" = "姓名";
+"walk_team_lblWeekAvgSteps" = "本週平均日步數";
+"walk_team_lblWeekTotalSteps" = "本週累積步數";
+"walk_team_lblWeekTotalDistances" = "本週累積里程";
+"walk_team_lblMonthAvgSteps" = "本月平均日步數";
+"walk_team_lblMonthTotalSteps" = "本月累積步數";
+"walk_team_lblMonthTotalDistances" = "本月累積里程";
+"walk_team_lblAchieved" = "目標達成";
+"walk_team_lblBehind" = "落後步數";
+
+"walk_everybody_title" = "戰情步數";
+"walk_everybody_unitWeek" = "本週";
+"walk_everybody_unitMonth" = "本月";
+"walk_everybody_lblTotalSteps" = "全體總步數";
+"walk_everybody_lblWeekAvgSteps" = "本週平均步數";
+"walk_everybody_lblWeekTotalSteps" = "本週累積步數";
+"walk_everybody_lblWeekTotalDistance" = "本週累積里程";
+"walk_everybody_lblReachTeam" = "達標小組數";
+"walk_everybody_lblBehindTeam" = "落後小組數";
+"walk_everybody_lblMonthAvgSteps" = "本月平均步數";
+"walk_everybody_lblMonthTotalSteps" = "本月累積步數";
+"walk_everybody_lblMonthTotalDistance" = "本月累積里程";
+
+"walk_detail_title" = "步數明細";
+"walk_detail_unitStep" = "步";
+"walk_detail_unitDistance" = "公里";
+"walk_detail_lblNotice" = "若步數資料有誤需修正，請提供識代、日期、步數、原因，將資料Email至安全衛生管理室陳進財。";

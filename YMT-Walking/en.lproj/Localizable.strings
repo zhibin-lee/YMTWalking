@@ -1,0 +1,49 @@
+/*
+  Localizable.strings
+  YMT-Walking
+
+  Created by animal-g on 2020/5/18.
+  Copyright © 2020 animal-g. All rights reserved.
+*/
+
+"login_privacy_title" = "Privacy Policy";
+"login_privacy_btnAccept" = "Accept";
+
+"login_login_title" = "YMT Walking";
+"login_login_id" = "Employee ID";
+"login_login_btnLogin" = "Login";
+
+"walk_team_title" = "Team Steps";
+"walk_team_lblTotalSteps" = "Team total steps";
+"walk_team_lblAvgSteps" = "Team Avg. steps";
+"walk_team_lblTodaySteps" = "Today steps";
+"walk_team_unitStep" = "Steps";
+"walk_team_unitWeek" = "Week";
+"walk_team_unitMonth" = "Month";
+"walk_team_lblName" = "Name";
+"walk_team_lblWeekAvgSteps" = "Week Avg. steps";
+"walk_team_lblWeekTotalSteps" = "Week steps";
+"walk_team_lblWeekTotalDistances" = "Week mileage";
+"walk_team_lblMonthAvgSteps" = "Month Avg. steps";
+"walk_team_lblMonthTotalSteps" = "Month steps";
+"walk_team_lblMonthTotalDistances" = "Month mileage";
+"walk_team_lblAchieved" = "Achieved Goal";
+"walk_team_lblBehind" = "Behind Steps";
+
+"walk_everybody_title" = "Overall Status";
+"walk_everybody_unitWeek" = "Week";
+"walk_everybody_unitMonth" = "Month";
+"walk_everybody_lblTotalSteps" = "Total steps";
+"walk_everybody_lblWeekAvgSteps" = "Weekly Avg. steps";
+"walk_everybody_lblWeekTotalSteps" = "Weekly total steps";
+"walk_everybody_lblWeekTotalDistance" = "Weekly total mileage";
+"walk_everybody_lblReachTeam" = "Team on schedule";
+"walk_everybody_lblBehindTeam" = "Team behind schedule";
+"walk_everybody_lblMonthAvgSteps" = "Monthly Avg. steps";
+"walk_everybody_lblMonthTotalSteps" = "Monthly total steps";
+"walk_everybody_lblMonthTotalDistance" = "Monthly total mileage";
+
+"walk_detail_title" = "Steps Detail";
+"walk_detail_unitStep" = "Steps";
+"walk_detail_unitDistance" = "Mileage";
+"walk_detail_lblNotice" = "If you have any question about steps record please Email to 安全衛生管理室陳進財 with ID, steps, reason.";

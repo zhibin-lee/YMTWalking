@@ -1,0 +1,49 @@
+/*
+  Localizable.strings
+  YMT-Walking
+
+  Created by animal-g on 2020/5/18.
+  Copyright © 2020 animal-g. All rights reserved.
+*/
+
+"login_privacy_title" = "個人情報保護方針";
+"login_privacy_btnAccept" = "受け入れる";
+
+"login_login_title" = "YMT Walking";
+"login_login_id" = "従業員 ID";
+"login_login_btnLogin" = "ログインする";
+
+"walk_team_title" = "グループ 歩数";
+"walk_team_lblTotalSteps" = "グループ合計歩数";
+"walk_team_lblAvgSteps" = "グループ平均歩数";
+"walk_team_lblTodaySteps" = "今日歩数";
+"walk_team_unitStep" = "歩数";
+"walk_team_unitWeek" = "週間";
+"walk_team_unitMonth" = "月間";
+"walk_team_lblName" = "名前";
+"walk_team_lblWeekAvgSteps" = "週間平均歩数";
+"walk_team_lblWeekTotalSteps" = "週間歩数";
+"walk_team_lblWeekTotalDistances" = "週間マイレージ";
+"walk_team_lblMonthAvgSteps" = "月間平均歩数";
+"walk_team_lblMonthTotalSteps" = "月間歩数";
+"walk_team_lblMonthTotalDistances" = "月間マイレージ";
+"walk_team_lblAchieved" = "目標達成";
+"walk_team_lblBehind" = "落後步數";
+
+"walk_everybody_title" = "全体状態";
+"walk_everybody_unitWeek" = "週間";
+"walk_everybody_unitMonth" = "月間";
+"walk_everybody_lblTotalSteps" = "合計歩数";
+"walk_everybody_lblWeekAvgSteps" = "週間平均歩数";
+"walk_everybody_lblWeekTotalSteps" = "週間合計歩数";
+"walk_everybody_lblWeekTotalDistance" = "週間合計マイレージ";
+"walk_everybody_lblReachTeam" = "達成目標グループ";
+"walk_everybody_lblBehindTeam" = "未達成目標グループ";
+"walk_everybody_lblMonthAvgSteps" = "月間平均歩数";
+"walk_everybody_lblMonthTotalSteps" = "月間合計歩数";
+"walk_everybody_lblMonthTotalDistance" = "月間合計マイレージ";
+
+"walk_detail_title" = "歩数細部";
+"walk_detail_unitStep" = "歩数";
+"walk_detail_unitDistance" = "マイレージ";
+"walk_detail_lblNotice" = "歩数記録に関する質問は、ID、歩数、理由を添えて安全衛生管理室陳進財までメールでお問い合わせください。";
