@@ -15,7 +15,7 @@ import JGProgressHUD
 var id : String = ""
 var teamTotalSteps : String = ""
 var teamAvgSteps : String = ""
-var teamBehindS
+var teamBehindSteps : String = ""
 
 var weekTeam : [Person] = []
 var monthTeam : [Person] = []
