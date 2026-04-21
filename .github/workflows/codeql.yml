@@ -1,0 +1,59 @@
+name: "CodeQL Advanced"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '24 15 * * 6'
+
+jobs:
+  analyze:
+    name: Analyze (swift)
+    runs-on: macos-latest
+    permissions:
+      security-events: write
+      packages: read
+      actions: read
+      contents: read
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+        - language: swift
+          build-mode: manual
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v4
+      with:
+        languages: ${{ matrix.language }}
+        build-mode: ${{ matrix.build-mode }}
+
+    # 加入了你詢問的依賴安裝與 Workspace 編譯步驟
+    - name: Run manual build steps
+      if: matrix.build-mode == 'manual'
+      shell: bash
+      run: |
+        cd YMT-Walking
+        
+        echo "正在安裝 CocoaPods 依賴..."
+        pod install
+        
+        echo "執行 xcodebuild 編譯 Workspace..."
+        # 注意：這裡假設你的檔案叫 YMT-Walking.xcworkspace
+        # 如果名稱不同，請修改下方的 -workspace 參數
+        xcodebuild -workspace YMT-Walking.xcworkspace \
+                   -scheme YMT-Walking \
+                   -destination 'generic/platform=iOS' \
+                   build CODE_SIGNING_ALLOWED=NO
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v4
+      with:
+        category: "/language:${{matrix.language}}"
